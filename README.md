@@ -21,7 +21,7 @@
 본 프로젝트는 다음과 같은 기능을 제공합니다. 
 <br>
 
-> 1. audio-scrip로 구성된 `transcript.txt` 자체 식별
+> 1. audio-script로 구성된 `transcript.txt` 자체 식별
 > 2. 경로 기반 발화자(speaker) 구분
 > 3. MFA 요구 폴더 구조로 재구성
 > 4. MFA를 통한 TextGrid 파일 생성
