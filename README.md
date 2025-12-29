@@ -53,10 +53,10 @@ $ mfa model download dictionary [DICTIONARY_NAME]   #install dictionary
 ```python
 #Get mfa model & dictionary
 $ mfa model list acoustic
->>> ['japanese_mfa']
+>>> ['japanese_mfa', 'korean_mfa']
 
 $ mfa model list dictionary
->>> ['japanese_mfa']
+>>> ['japanese_mfa', 'korean_mfa']
 
 
 #Edit `hparams.py`
