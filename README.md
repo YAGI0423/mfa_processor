@@ -32,11 +32,16 @@
 
 ### Building an environment
 ```python
-$ conda create -n mfa_processor -c conda-forge montreal-forced-aligner  #Create env
+$ conda create -n mfa_processor -c conda-forge montreal-forced-aligner==2.2.17  #Create env
 $ conda activate mfa_processor  #activate env
 
-$ pip install -r requirements.txt   #install requirements.txt
 $ conda update montreal-forced-aligner -c conda-forge   #install `montreal-forced-aligner`
+$ mfa version   #Check `mfa` version
+>>> 3.3.8
+
+#install library
+$ pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124   #install pytorch
+$ pip install questionary
 
 $ mfa model download acoustic [MODEL_NAME]          #install model, ex) `japanese_mfa`
 $ mfa model download dictionary [DICTIONARY_NAME]   #install dictionary
@@ -83,6 +88,10 @@ mfa_result/
 
 $ python mfa_processor.py   #Get TextGrid
 '''
+Error About mecab
+1. pip install python-mecab-[LANG] jamo
+2. conda install -c conda-forge spacy sudachipy sudachidict-core
+
 mfa_result/
     |--- speaker1/
     |       |--- audio1.wav
